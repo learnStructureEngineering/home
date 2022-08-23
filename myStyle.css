@@ -1,16 +1,42 @@
 body {
-    padding-left: 10px;
+    background-image: linear-gradient(rgb(235, 231, 231), rgb(252, 252, 252));
     font-size: 18px;
 }
 
 * {
     box-sizing: border-box;
+
 }
 
 .header {
-    overflow: auto;
-    background-image: url('images/');
+    overflow: auto;    
+    padding-left: 10px; 
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(233, 226, 226));
+       
+    
 }
+
+.clipImage{
+    color: white;  /* Fallback: assume this color ON TOP of image */
+    background: url(images/back.jpg); /* Set the backround image */
+    -webkit-background-clip: text; /* clip the background to the text inside the tag*/
+    -webkit-text-fill-color: transparent; /* make the text transparent so 
+                                           * the background shows through*/
+ }
+
+.headerimage {
+    width: 80px;
+    float: left;
+    padding-top: 12px;
+    padding-right: 10px;
+}
+@media only screen and (max-width:768px) {
+
+    .headerimage{
+        padding-top: 30px; 
+    }
+}
+
 
 .topnav {
     background-color: #4CAF50;
@@ -50,10 +76,12 @@ body {
 
 .column.leftside {
     width: 14%;
-    background-color: #f1f1f1;
-    /*border: 3px solid #73AD21;*/
+    background-color: #e9e7e7;
+    
     padding-left: 10px;
     margin-right: 1%;
+    min-height: 900px;
+
 }
 
 .column.middleside {
@@ -62,9 +90,12 @@ body {
 }
 
 .column.rightside {
-    width: 15%;
-    background-color: #f1f1f1;
+    width: 14%;
+    background-color: #e9e7e7;
+    min-height: 900px;
     /*border: 3px solid #73AD21;*/
+    margin-left: 1%;
+    padding-left: 10px;
 }
 
 .row:after {
@@ -84,23 +115,25 @@ body {
     .column.middleside,
     .column.rightside {
         width: 100%;
+        min-height: 0px;
     }
 
     .column.leftside {
         width: 100%;
+        min-height: 0px;
     }
 
     .topnav {
         background-color: #4CAF50;
         overflow: auto;
-        padding-left: 5px;
+        
     }
 
     .topnav a {
         color: #ffffff;
         float: left;
         display: block;
-        padding: 10px 15px;
+        padding: 10px 10px;
     }
 
     .midcolumnonly {
