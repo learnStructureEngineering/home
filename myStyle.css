@@ -9,20 +9,24 @@ body {
 }
 
 .header {
-    overflow: auto;    
-    padding-left: 10px; 
+    overflow: auto;
+    padding-left: 10px;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(233, 226, 226));
-       
-    
+
+
 }
 
-.clipImage{
-    color: white;  /* Fallback: assume this color ON TOP of image */
-    background: url(images/back.jpg); /* Set the backround image */
-    -webkit-background-clip: text; /* clip the background to the text inside the tag*/
-    -webkit-text-fill-color: transparent; /* make the text transparent so 
+.clipImage {
+    color: white;
+    /* Fallback: assume this color ON TOP of image */
+    background: url(images/back.jpg);
+    /* Set the backround image */
+    -webkit-background-clip: text;
+    /* clip the background to the text inside the tag*/
+    -webkit-text-fill-color: transparent;
+    /* make the text transparent so 
                                            * the background shows through*/
- }
+}
 
 .headerimage {
     width: 80px;
@@ -30,10 +34,11 @@ body {
     padding-top: 12px;
     padding-right: 10px;
 }
+
 @media only screen and (max-width:768px) {
 
-    .headerimage{
-        padding-top: 30px; 
+    .headerimage {
+        padding-top: 30px;
     }
 }
 
@@ -77,7 +82,7 @@ body {
 .column.leftside {
     width: 14%;
     background-color: #e9e7e7;
-    
+
     padding-left: 10px;
     margin-right: 1%;
     min-height: 900px;
@@ -126,7 +131,7 @@ body {
     .topnav {
         background-color: #4CAF50;
         overflow: auto;
-        
+
     }
 
     .topnav a {
@@ -152,4 +157,10 @@ body {
 a:link,
 a:visited {
     text-decoration: none;
+}
+
+canvas {
+    
+    border: 1px solid rgb(173, 140, 168);
+    box-shadow: 5px 5px rgb(72, 82, 85);
 }
