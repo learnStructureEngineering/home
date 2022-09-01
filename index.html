@@ -38,10 +38,10 @@
         </div>
 
         <div class="column middleside">
-            <h3><a href="pages/basics.html">Start learning today...</a></h3>
+            <h3><a href="pages/basics.html">Start learning from basics...</a></h3>
 
-            <h3>Beam Calculator</h3>            
-            
+            <h3>Beam Calculator</h3>
+
             <p><u> Beam Details </u> </p>
             <form action="">
                 <label for="">Span: </label>
@@ -66,21 +66,24 @@
                     title="distance of concentrated load from left support" value="3">
                 <label for="">m</label>
                 <label for="">&emsp; &emsp; Load value:</label>
-                <input type="number" id="load" min="0" max="99" value="50">
+                <input type="number" id="load" min="0" max="99" value="50" >
                 <label for="">kN</label>
 
                 <br><br>
 
             </form>
             <button onclick="beamCalculator()"> Calculate </button>
-            <p id="para"></p>
+           <p id="para"></p>
 
-            <canvas id="beamCanvas" width="450" height="100"></canvas>
+            <canvas id="beamCanvas" width="425" height="100"></canvas>
 
             <br><br>
 
             <p><u>Shear Force Diagram</u> </p>
-            <canvas id="shearCanvas" width="450" height="150"> </canvas>
+            <canvas id="shearCanvas" width="425" height="100"> </canvas>
+            <br><br>
+            <p><u>Bending Moment Diagram</u> </p>
+            <canvas id="bendCanvas" width="425" height="100"> </canvas>
         </div>
 
         <div class="column rightside">
